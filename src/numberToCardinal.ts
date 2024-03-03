@@ -1,9 +1,9 @@
 export const numberToCardinal = (str: string): string => {
 
-    function isNumeric(str: string): boolean {
+    const isNumeric = (str: string): boolean => {
         const regex = /^[0-9]+$/;
         return regex.test(str);
-    }
+    };
 
     const one = (num: number): string => {
         switch (num) {
